@@ -3,8 +3,8 @@ title = "nickhartjes"
 
 theme = "hugo-coder"
 
-languagecode = "en"
-defaultcontentlanguage = "en"
+languagecode = "nl"
+defaultcontentlanguage = "nl"
 
 paginate = 20
 canonifyurls = true
@@ -13,21 +13,21 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "nickhartjes"
 
 [params]
     author = "Nick Hartjes"
-    description = "John Doe's personal website"
+    description = "Nick Hartjes's persoonlijke website"
     keywords = "blog,developer,personal"
     info = "Full Stack DevOps and Magician"
     avatarurl = "images/avatar.jpg"
     #gravatar = "john.doe@example.com"
     footercontent = "Enter a text here."
 
-    dateformat = "January 2, 2006"
+    dateformat = "2 January, 2006"
 
     hideFooter = false
-    hideCredits = false
+    hideCredits = true
     hideCopyright = false
     since = 2019
 
@@ -76,39 +76,32 @@ disqusShortname = "yourdiscussshortname"
     name = "Github"
     icon = "fab fa-github"
     weight = 1
-    url = "https://github.com/johndoe/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab"
-    weight = 2
-    url = "https://gitlab.com/johndoe/"
+    url = "https://github.com/nickhartjes/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
+    weight = 2
+    url = "https://twitter.com/nickhartjes/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
-    weight = 4
-    url = "https://www.linkedin.com/in/johndoe/"
+    weight = 3
+    url = "https://www.linkedin.com/in/nickhartjes/"
 [[params.social]]
     name = "Medium"
     icon = "fab fa-medium"
-    weight = 5
-    url = "https://medium.com/@johndoe"
-[[params.social]]
-    name = "RSS"
-    icon = "fas fa-rss"
-    weight = 6
-    url = "https://myhugosite.com/index.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
-
+    weight = 4
+    url = "https://medium.com/@nickhartjes/"
 
 [languages]
     [languages.en]
         languagename = "English"
+
+        [languages.nl.params]
+            keywords = "blog,developer,personal"
+            info = "Full Stack DevOps and Magician"
+            description = "Personal site of Nick Hartjes"
+            footercontent = ""
 
         [languages.en.menu]
 
@@ -133,35 +126,27 @@ disqusShortname = "yourdiscussshortname"
             url = "contact/"
 
 
-    [languages.pt-br]
-        languagename = "Português"
-        title = "João Ninguém"
+    [languages.nl]
+        languagename = "Nederlands"
 
-        [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
-            footercontent = "Coloque algum texto aqui."
+        [languages.nl.menu]
 
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "Sobre"
+            [[languages.nl.menu.main]]
+            name = "Over"
             weight = 1
             url = "about/"
 
-            [[languages.pt-br.menu.main]]
+            [[languages.nl.menu.main]]
             name = "Blog"
             weight = 2
             url = "posts/"
 
-            [[languages.pt-br.menu.main]]
-            name = "Projetos"
+            [[languages.nl.menu.main]]
+            name = "Projecten"
             weight = 3
             url = "projects/"
 
-            [[languages.pt-br.menu.main]]
-            name = "Contato"
+            [[languages.nl.menu.main]]
+            name = "Contact"
             weight = 5
             url = "contact/"
