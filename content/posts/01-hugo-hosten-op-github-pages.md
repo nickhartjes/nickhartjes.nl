@@ -1,3 +1,24 @@
++++
+date = "2020-09-19"
+title = "Hugo CMS hosten op Github pages"
+slug = "hugo-cms-hosten-op-github-pages" 
+tags = ["hugo"]
+categories = []
+series = ["CMS", "Hugo", "Hosting"]
+
++++
+
+## Introduction
+
+
+
+```shell
+.github/workflows/main.yaml
+```
+
+
+
+```yaml
 name: Publish to Github Pages
 
 on:
@@ -30,3 +51,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+```
+

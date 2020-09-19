@@ -1,6 +1,6 @@
 +++
 title = "Projects"
-slug = "projects"
+slug = "projecten"
 +++
 
-Nothing to see here... Move along!
+Projecten

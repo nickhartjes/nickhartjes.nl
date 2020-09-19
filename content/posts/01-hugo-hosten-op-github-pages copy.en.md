@@ -1,13 +1,36 @@
++++
+date = "2020-09-19"
+title = "Hosting Hugo CMS on Github Pages"
+slug = "hosting-hugo-cms-on-github-pages" 
+tags = ["hugo"]
+categories = []
+series = ["CMS", "Hugo", "Hosting"]
+
++++
+
+## Introduction
+
+
+
+```shell
+.github/workflows/main.yaml
+```
+
+
+
+```yaml
 name: Publish to Github Pages
 
 on:
   push:
-    branches:
-      - main  # Set a branch to deploy
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
         with:
@@ -28,3 +51,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+```
+
