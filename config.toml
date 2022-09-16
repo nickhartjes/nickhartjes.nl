@@ -99,7 +99,7 @@ disqusShortname = "nickhartjes"
 
         [languages.nl.params]
             keywords = "blog,developer,personal"
-            info = "Full Stack DevOps and Magician"
+            info = "Doing something with software"
             description = "Personal site of Nick Hartjes"
             footercontent = ""
 
