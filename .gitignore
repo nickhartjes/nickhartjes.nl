@@ -1,8 +1,7 @@
-/public/
-/resources/_gen/
-/.idea
+/public
+/themes
+/resources
+.DS_Store
 
-hugo.exe
-hugo.linux
-hugo.darwin
-/.hugo_build.lock
+.idea
+.hugo_build.lock

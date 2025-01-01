@@ -1,0 +1,38 @@
+baseURL = "https://nickhartjes.nl"
+title = "Nick Hartjes"
+copyright = "Nick Hartjes"
+languageCode = "nl"
+defaultContentLanguage = "nl"
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+enableGitInfo = true
+
+[markup]
+  _merge = "deep"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+  [privacy.vimeo]
+    disabled = true
+    simple = true
+
+  [privacy.twitter]
+    disabled = true
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = true
+    simple = true
+
+  [privacy.youtube]
+    disabled = true
+    privacyEnhanced = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/tomowang/hugo-theme-tailwind"
